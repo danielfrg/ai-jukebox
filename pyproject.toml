@@ -7,12 +7,18 @@ requires-python = ">=3.12.0,<3.13"
 license = "Apache-2.0"
 keywords = []
 authors = [{ name = "Daniel Rodriguez", email = "daniel@danielfrg.com" }]
-dependencies = ["diffrhythm"]
+dependencies = [
+    "diffrhythm",
+    "fastapi[standard]>=0.115.11",
+]
 
 [dependency-groups]
 dev = [
     "ruff>=0.8.1",
 ]
+
+[project.scripts]
+api = "aijukebox.api:main"
 
 [tool.uv.sources]
 diffrhythm = { workspace = true }
