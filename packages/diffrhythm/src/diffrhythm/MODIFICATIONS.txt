@@ -1,0 +1,6 @@
+The code here is almost the source from: https://github.com/ASLP-lab/DiffRhythm
+
+Changes:
+- Imports to be relative
+- Path to config and g2p files using Pathlib
+
